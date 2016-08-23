@@ -1,0 +1,75 @@
+#wrap
+  #content
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    #page-header
+      .row
+        .span12
+          %h2 Contact
+        / end .span12
+      / end .row
+    / end #page-header
+    .row
+      .span3
+        .icon-box-1
+          %i.ifc-umbrella
+          .icon-box-content
+            %h3 Get In Touch
+          / end .icon-box-content
+        / end .icon-box-1
+        %p Lorem ipsum dolor sit amet, consectet dipisicing elit, sed do eiusmod tempor.
+        %address
+          %strong Sapphire Offices
+          %br/
+          121th Street North East
+          %br/
+          Atlanta, GA 30309
+          %br/
+          %br/
+          Phone: 012) 456-7890
+          %br/
+          Email: office@sapphire.com
+      / end .span3
+      .span9
+        %h3 Send us a Message
+        %br/
+        %form#contact-form.fixed{:action => "_layout/php/send.php", :method => "post", :name => "contact-form"}
+          %fieldset
+            #formstatus
+            .row
+              .span3
+                %input#name{:name => "name", :placeholder => "name", :type => "text", :value => ""}/
+              / edd .span3
+              .span3
+                %input#email{:name => "email", :placeholder => "e-mail", :type => "text", :value => ""}/
+              / edd .span3
+              .span3
+                %input#subject{:name => "subject", :placeholder => "subject", :type => "text", :value => ""}/
+              / edd .span3
+            / end .row
+            %textarea#message.span9{:cols => "25", :name => "message", :placeholder => "comment", :rows => "10"}
+            %input#submit.btn.btn-green-dark.float-right{:name => "submit", :type => "submit", :value => "Submit"}/
+      / end .span9
+    / end .row
+    .row
+      .span12
+        .social-media.text-center{:style => "margin-bottom:-20px;"}
+          %a.facebook-icon.social-icon{:href => "#"}
+            %i.fa.fa-facebook
+          %a.twitter-icon.social-icon{:href => "#"}
+            %i.fa.fa-twitter
+          %a.pinterest-icon.social-icon{:href => "#"}
+            %i.fa.fa-pinterest
+          %a.googleplus-icon.social-icon{:href => "#"}
+            %i.fa.fa-google-plus
+      / end .span12
+    / end .row
+    .google-map{:style => "margin-bottom:-80px;"}
+      #google-map.map
+      .overlay.top
+      .overlay.bottom
+      .overlay.left
+      .overlay.right
+    / end .google-map
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+/ end #wrap

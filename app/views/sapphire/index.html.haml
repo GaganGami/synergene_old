@@ -1,0 +1,360 @@
+#wrap
+  #content
+    
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    / /// BANNER   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    = render 'sapphire/banner'
+    / ///   BOX    ///////////////////////////////////////////////////////////////////////////////////////////////////////////   
+    = render 'sapphire/box'
+    
+    .row
+      .span4
+        .icon-box-2
+          %i.ifc-flag_filled
+          .icon-box-content
+            %h3.text-uppercase.text-center
+              %a{:href => "#"} Lorem ipsum dolor
+            %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus integer mus dignissim feugiat urna congue.
+          / end .icon-box-content
+        / end .icon-box-2
+      / end .span4
+      
+      .span4
+        .icon-box-2
+          %i.ifc-idea_filled
+          .icon-box-content
+            %h3.text-uppercase.text-center
+              %a{:href => "#"} Ipsum dolor sit amet
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua ut enim ad.
+          / end .icon-box-content
+        / end .icon-box-2
+      / end .span4
+      
+      .span4
+        .icon-box-2
+          %i.ifc-folder_filled
+          .icon-box-content
+            %h3.text-uppercase.text-center
+              %a{:href => "#"} Dolor sit amet
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.
+          / end .icon-box-content
+        / end .icon-box-2
+      / end .span4
+    / end .row
+    
+    .row
+      .span12
+        %h3.headline
+          %span Portfolio
+      / end .span12
+    / end .row
+    
+    .row
+      .span6
+        .icon-box-1
+          %i.ifc-copy
+          .icon-box-content
+            %h2
+              %a{:href => "#"} This is awesome!
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt. magna aliqua.
+          / end .icon-box-content
+        / end .icon-box-1
+        %p.hidden-tablet
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+          beatae vitae dicta sunt explicabo.
+        %p.text-right
+          %a.btn.btn-green-dark{:href => "#"} read more
+      / end .span6
+      
+      .span6
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/460x265-2.png"}/
+              = image_tag ("_content/portfolio/460x265-2.png")
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/460x265-2.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/460x265-2.png")}", title: "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span6
+    / end .row
+    
+    .row
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-1.png"}/
+              = image_tag ("_content/portfolio/220x217-1.png")
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-1.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-1.png")}", :title => "zoom"}  
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-5.png"}/
+              = image_tag ("_content/portfolio/220x217-5.png")
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-5.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-5.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-2.png"}/
+              = image_tag ("_content/portfolio/220x217-2.png")
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-2.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-2.png")}", :title => "zoom"}  
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-6.png"}/
+              = image_tag ("_content/portfolio/220x217-6.png")
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-6.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-6.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+    / end .row
+    %br/
+    %br/
+    .row
+      .span8
+        .icon-box-1
+          %i.ifc-brain_filled
+          .icon-box-content
+            %h2
+              %a{:href => "#"} Sapphire is the key to success
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          / end .icon-box-content
+        / end .icon-box-1
+      / end .span8
+    / end .row
+    %br/
+    
+    .row
+      .span5
+        %p
+          / %img.responsive-img{:alt => "", :src => "_content/index/300x300.png"}/
+          %img.responsive-img{:alt => "", src: "#{image_path("_content/index/300x300.png")}"}/
+      / end .span5
+      
+      .span7
+        %h2
+          Need Asistance?
+          %br.visible-phone/
+          Let us know!
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        %ul.check
+          %li Sed ut perspiciatis unde omnis
+          %li Nemo enim ipsam voluptatem voluptas aspernatur
+          %li At vero eos et accusamus et iusto odio dignissimos
+          %li Lorem ipsum dolor sit amet
+      / end .span7
+    / end .row
+    %br/
+    %br/
+    %br/
+    / .box{:style => "background-image:url(_content/backgrounds/bg-box-2.jpg);"}
+    
+    .box{:style => "background-image: url(#{image_path "_content/backgrounds/bg-box-2.jpg"})"}
+      .row
+        .span12
+          %br/
+          %br/
+          %h1.text-center.last
+            Who we´ve
+            %strong worked
+            with
+          %br/
+          %br/
+        / end .span12
+      / end .row
+      
+      .box-overlay
+        .row
+          .span12
+            %br/
+            %br/
+            %ul.client-logo
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-1.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-1.png")}"}/
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-2.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-2.png")}"}/
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-3.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-3.png")}"}/
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-4.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-4.png")}"}/
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-5.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-5.png")}"}/
+              %li
+                / %img{:alt => "", :src => "_content/index/logo/180x55-6.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-6.png")}"}/
+              %li.hidden-tablet
+                / %img{:alt => "", :src => "_content/index/logo/180x55-7.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-7.png")}"}/
+              %li.hidden-tablet
+                / %img{:alt => "", :src => "_content/index/logo/180x55-8.png"}/
+                %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-8.png")}"}/
+          / end .span12
+        / end. row
+      / end .box-overlay
+    / end .box
+    
+    .row
+      .span8
+        .icon-box-1
+          %i.ifc-user_male
+          .icon-box-content
+            %h3
+              %strong
+                %a{:href => "#"} Retina Ready
+            %p
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+          / end .icon-box-content
+        / end .icon-box-1
+        
+        .icon-box-1
+          %i.ifc-upload_filled
+          .icon-box-content
+            %h3
+              %strong
+                %a{:href => "#"} Optimized for Devices
+            %p
+              Architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
+          / end .icon-box-content
+        / end .icon-box-1
+        
+        .icon-box-1
+          %i.ifc-unlock
+          .icon-box-content
+            %h3
+              %strong
+                %a{:href => "#"} Easy to Customize
+            %p
+              Ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+              magni dolores eos qui ratione voluptatem sequi nesciunt
+          / end .icon-box-content
+        / end .icon-box-1
+      / end .span8
+      
+      .span4.text-right
+        / %img.responsive-img{:alt => "", :src => "_content/index/245x375.png"}/
+        %img.responsive-img{:alt => "", src: "#{image_path("_content/index/245x375.png")}"}/        
+      / end .span4
+    / end .row
+    %br/
+    .box-2{:style => "margin-bottom:-50px;"}
+      .row
+        .span12
+          %ul.timeline-2
+            %li.time
+              2005
+            %li
+              %i.ifc-umbrella
+              First Releaase
+            %li.time
+              2009
+            %li
+              %i.ifc-clock
+              +500 Clients
+            %li.time
+              2011
+            %li
+              %i.ifc-student_filled
+              IOS Launch
+            %li.time
+              2013
+            %li.time
+              2014
+        / end .span12
+      / end .row
+    / end .box
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+ 
+
+/ end #wrap

@@ -1,0 +1,31 @@
+/ .box{:style => "background-image:url(_content/backgrounds/bg-box.png);"}
+.box{:style => "background-image: url(#{image_path "_content/backgrounds/bg-box.png"})"}
+  .row
+    .span12
+      .callout-box.hidden-phone
+        .row
+          .span9
+            .icon-box-1
+              %i.ifc-download2
+              .icon-box-content
+                %h2
+                  %a{:href => "#"}
+                    Sed ut perspiciatis unde
+                    %strong omnis iste natus
+                    error sit
+                %p.last.hidden-tablet
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi explicabo.
+              / end .icon-box-content
+            / end .icon-box-1
+          / end .span9
+          .span3.text-right
+            %a.btn.btn-large.btn-black{:href => "#"}
+              %strong Buy It
+              Now
+          / end .span3
+        / end .row
+      / end .callout-box
+    / end .span12
+  / end .row
+/ end .box

@@ -1,0 +1,195 @@
+#wrap
+  #content
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    #page-header
+      .row
+        .span12
+          %h2 Services
+        / end .span12
+      / end .row
+    / end #page-header
+    .row
+      .span12
+        %h3.headline
+          %span Description of this service
+      / end .span12
+    / en .row
+    .row
+      .span8
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        %br/
+        %blockquote{:style => "border-left-color:#484f5e;"}
+          %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        %blockquote{:style => "border-left-color:#656d7d;"}
+          %p
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
+        %blockquote{:style => "border-left-color:#8f9bb2;"}
+          %p
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            quis nostrud exercitation.
+      / end .span8
+      .span4
+        #diagram
+        .get
+          .arc
+            %span.text jQuery
+            %input.percent{:type => "hidden", :value => "75"}/
+            %input.color{:type => "hidden", :value => "#535a6a"}/
+          / end .arc
+          .arc
+            %span.text CSS3
+            %input.percent{:type => "hidden", :value => "70"}/
+            %input.color{:type => "hidden", :value => "#5a6171"}/
+          / end .arc
+          .arc
+            %span.text HTML5
+            %input.percent{:type => "hidden", :value => "95"}/
+            %input.color{:type => "hidden", :value => "#656d7d"}/
+          / end .arc
+          .arc
+            %span.text PHP
+            %input.percent{:type => "hidden", :value => "75"}/
+            %input.color{:type => "hidden", :value => "#687185"}/
+          / end .arc
+          .arc
+            %span.text MySQL
+            %input.percent{:type => "hidden", :value => "60"}/
+            %input.color{:type => "hidden", :value => "#798399"}/
+          / end .arc
+          .arc
+            %span.text Javascript
+            %input.percent{:type => "hidden", :value => "30"}/
+            %input.color{:type => "hidden", :value => "#8f9bb2"}/
+          / end .arc
+        / end .get
+      / end .span4
+    / end .row
+    #services-slider{:style => "margin-bottom:60px;"}
+      %ul.slides
+        %li
+          %img{:alt => "", :src => "_content/single-service-2/slider/1920x425-1.png"}/
+          .row
+            .span12
+              .slidetext.text-center{:style => "bottom:80px;"}
+                %h1
+                  Just press
+                  %strong PLAY
+                %p.hidden-phone
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                  laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+                %br/
+                %p
+                  %a.magnificPopup-video{:href => "http://youtube.com/watch?v=G_G8SdXktHg"}
+                    %img{:alt => "", :src => "_layout/images/play-button.png"}/
+              / end .slidetext
+            / end .span12
+          / end .row
+        %li
+          %img{:alt => "", :src => "_content/single-service-2/slider/1920x425-2.png"}/
+          .row
+            .span12
+              .slidetext{:style => "bottom:100px;"}
+                %br/
+                %br/
+                %h3.headline.hidden-tablet.hidden-phone
+                  %span Our Other Services
+                .row
+                  .span4
+                    .icon-box-1.fixed
+                      %i.ifc-document
+                      .icon-box-content
+                        %h3
+                          %a{:href => "#"} Lorem ipsum dolor sit amet
+                        %p.hidden-phone
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua ut enim veniam.
+                      / end .icon-box-content
+                    / end .icon-box-1
+                  / end .span4
+                  .span4
+                    .icon-box-1.fixed
+                      %i.ifc-download2_filled
+                      .icon-box-content
+                        %h3
+                          %a{:href => "#"} Lorem dolor sit amet
+                        %p.hidden-phone
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Proin eu sapien
+                          semper, consequat sapien sed, convallis ligula.
+                      / end .icon-box-content
+                    / end .icon-box-1
+                  / end .span4
+                  .span4
+                    .icon-box-1.fixed
+                      %i.ifc-copy
+                      .icon-box-content
+                        %h3
+                          %a{:href => "#"} Lorem ipsum dolor
+                        %p.hidden-phone
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Proin eu sapien
+                          semper, consequat sapien sed, convallis ligula. Nunc sit amet lectus.
+                      / end .icon-box-content
+                    / end .icon-box-1
+                  / end .span4
+                / end .row
+              / end .slidetext
+            / end .span12
+          / end .row
+        %li
+          %img{:alt => "", :src => "_content/single-service-2/slider/1920x425-3.png"}/
+          .row
+            .span12
+              .slidetext{:style => "bottom:0;"}
+                .row
+                  .span4.hidden-phone
+                    %ul.services-list
+                      %li
+                        %i.ifc-document
+                        Lorem ipsum dolor
+                      %li
+                        %i.ifc-download2_filled
+                        Lorem dolor amet
+                      %li
+                        %i.ifc-copy
+                        Omnis iste
+                      %li
+                        %i.ifc-upload2_filled
+                        Proin eu sapien
+                  / end .span4
+                  .span4
+                    %img.responsive-img{:alt => "", :src => "_content/single-service-2/slider/275x415.png"}/
+                  / end .span4
+                  .span4.hidden-phone
+                    %ul.services-list.text-right
+                      %li
+                        Lorem ipsum dolor
+                        %i.ifc-document
+                      %li
+                        Lorem dolor amet
+                        %i.ifc-download2_filled
+                      %li
+                        Omnis iste
+                        %i.ifc-copy
+                      %li
+                        Proin eu sapien
+                        %i.ifc-upload2_filled
+                  / end .span4
+                / end .row
+              / end .slidetext
+            / end .span12
+          / end .row
+    / end .services-slider
+    .row
+      .span12
+        %h3.headline-2
+          %span Our Portfolio
+      / end .span12
+    / end .row
+    = render 'sapphire/zoom'
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+/ end #wrap

@@ -1,0 +1,322 @@
+#wrap
+  #content
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    / /// BANNER   ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    = render 'sapphire/banner'
+    / ///   BOX    ///////////////////////////////////////////////////////////////////////////////////////////////////////////   
+    = render 'sapphire/box'
+    .row
+      .span12
+        %h3.headline
+          %span What We Offer
+      / end .row
+    / end .row
+    .row
+      .span4
+        .icon-box-1
+          %i.ifc-flag_filled
+          .icon-box-content
+            %h4.text-uppercase
+              %a{:href => "#"} Lorem ipsum dolor
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            %p.text-right
+              %a{:href => "#"} read more
+          / end .icon-box-content
+        / end .icon-box-1
+      / end .span4
+      .span4
+        .icon-box-1
+          %i.ifc-idea_filled
+          .icon-box-content
+            %h4.text-uppercase
+              %a{:href => "#"} Dolor sit amet
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            %p.text-right
+              %a{:href => "#"} read more
+          / end .icon-box-content
+        / end .icon-box-1
+      / end .span4
+      .span4
+        .icon-box-1
+          %i.ifc-folder_filled
+          .icon-box-content
+            %h4.text-uppercase
+              %a{:href => "#"} Ipsum dolor sit
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            %p.text-right
+              %a{:href => "#"} read more
+          / end .icon-box-content
+        / end .icon-box-1
+      / end .span4
+    / end .row
+    %br/
+    .box-3
+      .row
+        .span12.text-center
+          / %img.responsive-img{:alt => "", :src => "_content/index/940x310.png", :style => "margin-top:-30px;"}/
+          %img.responsive-img{:alt => "", src: "#{image_path("_content/index/940x310.png")}", :style => "margin-top:-30px;"}/
+        / end .span12
+      / end .row
+      .row
+        .span6
+          %h2 Easy to use template!
+          %p
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor emque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo.
+        / end .span6
+      / end .row
+    / end .box-3
+    .row
+      .span12
+        %h3.headline
+          %span Why Choose Us
+      / end .row
+    / end .row
+    .row
+      .span8
+        .icon-box-1
+          %i.ifc-key_filled
+          .icon-box-content
+            %h2
+              %a{:href => "#"} Lorem ipsum
+            %p
+              Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Vestibulum eleifend pharetra urna.
+          / end .icon-box-content
+        / end .icon-box-1
+        %br/
+        .row
+          .span4
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+          / end .span4
+          .span4
+            / %img.responsive-img{:alt => "", :src => "_content/index/240x180.png"}/
+            %img.responsive-img{:alt => "", src: "#{image_path("_content/index/240x180.png")}"}/
+          / end .span4
+        / end .row
+      / end .span8
+      .span4
+        %ul.icon-box-6
+          %li
+            %i.ifc-joystick_filled
+            .icon-box-content
+              %h5
+                %a{:href => "#"} Web Design
+              %p Lorem ipsum dolor sit amet.
+            / end .process-builder-1-content
+          %li
+            %i.ifc-lock_filled
+            .icon-box-content
+              %h5
+                %a{:href => "#"} Social Media
+              %p Vestibulum eleifend pharetra
+            / end .process-builder-1-content
+          %li
+            %i.ifc-message_filled
+            .icon-box-content
+              %h5
+                %a{:href => "#"} Mobile Apps
+              %p Lorem ipsum dolor sit amet.
+            / end .process-builder-1-content
+          %li
+            %i.ifc-settings_filled
+            .icon-box-content
+              %h5
+                %a{:href => "#"} Workcase
+              %p Vestibulum eleifend pharetra
+            / end .process-builder-1-content
+      / end .span4
+    / end .row
+    .row
+      .span12
+        %h3.headline
+          %span Statistics
+      / end .row
+    / end .row
+    / .parallax{:style => "background-image:url(_content/backgrounds/bg-parallax.png);"}
+    .parallax{:style => "background-image: url(#{image_path('_content/backgrounds/bg-parallax.png')})"}
+      %br/
+      .row
+        .span4
+          .pie-chart{"data-barcolor" => "#08ab89", "data-barsize" => "250", "data-linewidth" => "10", "data-percent" => "67", "data-trackcolor" => "#354d58"}
+            .pie-chart-percent
+              %span
+              \%
+            .pie-chart-description Bounce Rate
+          / end .pie-chart
+        / end .span4
+        .span4
+          .pie-chart{"data-barcolor" => "#6fd589", "data-barsize" => "250", "data-linewidth" => "10", "data-percent" => "75", "data-trackcolor" => "#354d58"}
+            .pie-chart-percent
+              %span
+              \%
+            .pie-chart-description Direct Traffic
+          / end .pie-chart
+        / end .span4
+        .span4
+          .pie-chart{"data-barcolor" => "#62d4d8", "data-barsize" => "250", "data-linewidth" => "10", "data-percent" => "86", "data-trackcolor" => "#354d58"}
+            .pie-chart-percent
+              %span
+              \%
+            .pie-chart-description New Visits
+          / end .pie-chart
+        / end .span4
+      / end .row
+      %br/
+    / end .parallax
+    .row
+      .span12
+        %h3.headline
+          %span Portfolio
+      / end .span12
+    / end .row
+    .row
+      .span6
+        .icon-box-1
+          %i.ifc-copy
+          .icon-box-content
+            %h2
+              %a{:href => "#"} Project Title
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt. magna aliqua.
+          / end .icon-box-content
+        / end .icon-box-1
+        %p
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+          beatae vitae dicta sunt explicabo.
+        %p.text-right
+          %a.btn.btn-green-dark{:href => "#"} read more
+      / end .span6
+      .span6
+        / %img.responsive-img{:alt => "", :src => "_content/portfolio/460x265-1.png"}/
+        %img.responsive-img{:alt => "", src: "#{image_path("_content/portfolio/460x265-1.png")}"}
+      / end .span6
+    / end .row
+    .row
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-1.png"}/
+              %img{:alt => "", src: "#{image_path("_content/portfolio/220x217-1.png")}"}/
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-1.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-1.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-2.png"}/
+              %img{:alt => "", src: "#{image_path("_content/portfolio/220x217-2.png")}"}/
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-2.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-2.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-3.png"}/
+              %img{:alt => "", src: "#{image_path("_content/portfolio/220x217-3.png")}"}/
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-3.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-3.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+      .span3
+        .portfolio-item
+          .portfolio-item-preview
+            %a{:href => "#"}
+              / %img{:alt => "", :src => "_content/portfolio/220x217-4.png"}/
+              %img{:alt => "", src: "#{image_path("_content/portfolio/220x217-4.png")}"}/
+            .portfolio-item-overlay
+              .portfolio-item-overlay-actions
+                / %a.magnificPopup-gallery.portfolio-item-zoom{:href => "_content/portfolio/220x217-4.png", :title => "zoom"}
+                %a.magnificPopup-gallery.portfolio-item-zoom{href: "#{image_path("_content/portfolio/220x217-4.png")}", :title => "zoom"}
+                  %i.ifc-zoom_in
+                %a.portfolio-item-link{:href => "#", :title => "zoom"}
+                  %i.ifc-link
+              / end .portfolio-item-overlay-actions
+              .portfolio-item-description.hidden-tablet
+                %h4.text-uppercase Portfolio Item
+                %p Description
+              / end .portfolio-item-description
+            / end .portfolio-item-overlay
+          / end .portfolio-item-preview
+        / end .portfolio-item
+      / end .span3
+    / end .row
+    .row
+      .span12
+        %h3.headline-2
+          %span Our Clients
+      / end .span12
+    / end .row
+    .row
+      .span12
+        %ul.client-logo
+          %li
+            / %img{:alt => "", :src => "_content/index/logo/180x55-1.png"}/
+            %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-1.png")}"}/
+          %li
+            / %img{:alt => "", :src => "_content/index/logo/180x55-2.png"}/
+            %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-2.png")}"}/
+          %li
+            / %img{:alt => "", :src => "_content/index/logo/180x55-3.png"}/
+            %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-3.png")}"}/
+          %li
+            / %img{:alt => "", :src => "_content/index/logo/180x55-4.png"}/
+            %img{:alt => "", src: "#{image_path("_content/index/logo/180x55-4.png")}"}/
+      / end .span12
+    / end .row
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+/end #wrap  

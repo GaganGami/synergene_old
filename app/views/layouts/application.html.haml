@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => " add description  ... ", :name => "description"}/
+    %title Sapphire
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %link{:href => "apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    = favicon_link_tag 'favicon.png', rel: "shortcut icon"
+
+%body
+  %header#header
+    = render  'layouts/top_header'
+  %nav#menu
+    = render  'layouts/navbar'
+    = yield
+%footer#footer
+  =render 'layouts/footer' 

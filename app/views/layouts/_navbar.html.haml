@@ -1,0 +1,147 @@
+#header
+  / /// HEADER  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .row
+    .span3
+      / // Logo //
+      %a#logo{:href => "index.html"}
+        / %img.responsive-img{:alt => "", :src => "_layout/images/logo.png"}/
+        %img.responsive-img{:alt => "", src: "#{image_path("_layout/images/logo.png")}"}/
+        / = image_tag ('_layout/images/logo.png')
+    / end .span3
+    .span9
+      / // Mobile menu trigger //
+      %a#mobile-menu-trigger{:href => "#"}
+        %i.fa.fa-bars
+      / // Menu //
+      %ul#menu.sf-menu
+        %li.current
+          / %a{:href => "index.html"} Home
+          = link_to "Home", sapphire_index_path  
+          
+          %ul
+            %li
+              / %a{:href => "index.html"} Home
+              = link_to "Home", sapphire_index_path
+            %li
+              / %a{:href => "/sapphire/index2"} Home 2
+              = link_to "Home2", index2_sapphire_index_path
+            %li
+              / %a{:href => "index-3.html"} Home 3
+              = link_to "Home3", index3_sapphire_index_path
+        
+
+        %li
+          / %a{:href => "about-us.html"} Pages
+          = link_to "Pages", about_us_sapphire_index_path
+          / = link_to "Pages", pages_about_us_sapphire_index_path
+          
+          %ul
+            %li
+              / %a{:href => "about-us.html"} About us
+              = link_to "About us", about_us_sapphire_index_path
+            %li
+              / %a{:href => "about-me.html"} About me
+              = link_to "About me", about_me_sapphire_index_path
+            %li
+              / %a{:href => "team.html"} Team
+              = link_to "Team", team_sapphire_index_path
+            %li
+              / %a{:href => "services.html"} Services
+              = link_to "Services", services_sapphire_index_path
+            %li
+              / %a{:href => "single-service.html"} Single service
+              = link_to "Single service", single_service_sapphire_index_path
+            %li
+              / %a{:href => "single-service-2.html"} Single service 2
+              = link_to "Single service 2", single_service2_sapphire_index_path 
+            %li
+              %a{:href => "page-404.html"} 404 page
+            %li
+              %a{:href => "page-with-sidebar.html"} Page with sidebar
+            %li
+              %a{:href => "full-with-page.html"} Full width page
+        
+
+        %li
+          %a{:href => "#"} Features
+          %ul
+            %li
+              %a{:href => "typography.html"} Typography
+            %li
+              %a{:href => "responsive-grid.html"} Responsive Grid
+            %li
+              %a{:href => "sliders.html"} Sliders
+            %li
+              %a{:href => "accordion-toggles.html"} Accordion and Toggles
+            %li
+              %a{:href => "alerts-notifications.html"} Alerts and Notifications
+            %li
+              %a{:href => "buttons.html"} Buttons
+            %li
+              %a{:href => "callout-box.html"} Callout box
+            %li
+              %a{:href => "custom-list.html"} Custom List
+            %li
+              %a{:href => "dividers.html"} Dividers
+            %li
+              %a{:href => "google-maps.html"} Google maps
+            %li
+              %a{:href => "headlines.html"} Headlines
+            %li
+              %a{:href => "icon-boxes.html"} Icon Boxes
+            %li
+              %a{:href => "page-sections.html"} Page sections
+            %li
+              %a{:href => "parallax-backgrounds.html"} Parallax backgrounds
+            %li
+              %a{:href => "pricing-tables.html"} Pricing and data tables
+            %li
+              %a{:href => "process-builder.html"} Process builder
+            %li
+              %a{:href => "progress-bars-pie-charts-milestones.html"} Progress bars, Pie Charts and Milestones
+            %li
+              %a{:href => "social-media.html"} Social Media
+            %li
+              %a{:href => "tabs.html"} Tabs
+            %li
+              %a{:href => "#"} 3rd level dropdown
+              %ul
+                %li
+                  %a{:href => "#"} 3rd level
+                %li
+                  %a{:href => "#"} dropdown
+                %li
+                  %a{:href => "#"} example
+        %li
+          %a{:href => "portfolio.html"} Portfolio
+          %ul
+            %li
+              %a{:href => "portfolio.html"} Portfolio
+            %li
+              %a{:href => "portfolio-2.html"} Portfolio 2
+            %li
+              %a{:href => "portfolio-3.html"} Portfolio 3
+            %li
+              %a{:href => "portfolio-item.html"} Portfolio item
+        %li
+          %a{:href => "blog.html"} Blog
+          %ul
+            %li
+              %a{:href => "blog.html"} Blog
+            %li
+              %a{:href => "blog-2.html"} Blog 2
+            %li
+              %a{:href => "blog-3.html"} Blog 3
+            %li
+              %a{:href => "blog-4.html"} Blog 4
+            %li
+              %a{:href => "blog-5.html"} Blog 5
+            %li
+              %a{:href => "blog-post.html"} Blog post
+        %li
+          / %a{:href => "contact.html"} Contact
+          = link_to "Contact", contact_sapphire_index_path
+    / end .span9
+  / end .row
+  / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/ end #header

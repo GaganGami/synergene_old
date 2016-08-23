@@ -1,0 +1,2 @@
+module SapphireHelper
+end

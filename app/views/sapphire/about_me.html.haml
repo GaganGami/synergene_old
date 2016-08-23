@@ -1,0 +1,211 @@
+#wrap
+  #content
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    #page-header
+      .row
+        .span12
+          %h2 About me
+        / end .span12
+      / end .row
+    / end #page-header
+    .row
+      .span12
+        %h3.headline
+          %span Meet the Artist
+      / end .span12
+    / end .row
+    .row
+      .span4
+        .team-member
+          / %img{:alt => "", :src => "_content/team/255x300-1.png"}/
+          %img{:alt => "", src: "#{image_path("_content/team/255x300-1.png")}"}
+          %br.clear/
+          %h2 Cate Smith
+          %h3 Designer
+          .social-media
+            %a.facebook-icon.social-icon{:href => "#"}
+              %i.fa.fa-facebook
+            %a.twitter-icon.social-icon{:href => "#"}
+              %i.fa.fa-twitter
+            %a.googleplus-icon.social-icon{:href => "#"}
+              %i.fa.fa-google-plus
+            %a.pinterest-icon.social-icon{:href => "#"}
+              %i.fa.fa-pinterest
+          / end .social-media
+        / end .team-member
+      / end .span4
+      .span8
+        .icon-box-1
+          %i.ifc-umbrella_filled
+          .icon-box-content
+            %h4 My Story
+          / end .icon-box-content
+        / end .icon-box-1
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden.
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        %br/
+        %br/
+        %ul.circle
+          %li Lorem ipsum dolor sit amet, consecteur adipisicing elit
+          %li Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          %li Nemo enim ipsam voluptatem quia voluptas sit aspernatur odit aut fugit
+      / end .span8
+    / end .row
+    %br/
+    %br/
+    / .parallax{:style => "background-image:url(_content/backgrounds/bg-parallax.png);"}
+    .parallax{:style => "background-image: url(#{image_path "_content/backgrounds/bg-parallax.png"})"}
+      %br/
+      %br/
+      .row
+        .span12
+          .process-builder
+            %ul.fixed
+              %li.color-shade-2
+                %span
+                  %i.ifc-recycle_sign_filled
+                .process-description
+                  %h3
+                    1. Creative
+                    %strong Design
+                / end .process-description
+              %li.color-shade-3
+                %span
+                  %i.ifc-download2_filled
+                .process-description
+                  %h3
+                    2. Unique
+                    %strong Style
+                / end .process-description
+              %li.color-shade-1
+                %span
+                  %i.ifc-lock_filled
+                .process-description
+                  %h3
+                    3. Retina
+                    %strong Ready
+                / end .process-description
+              %li.color-shade-5
+                %span
+                  %i.ifc-megaphone_filled
+                .process-description
+                  %h3
+                    4. Very
+                    %strong Responsive
+                / end .process-description
+          / end .process-builder
+        / end .span12
+      / end .row
+      %br/
+    / end .parallax
+    %br/
+    %br/
+    .row
+      .span6
+        .icon-box-1
+          %i.ifc-toolbox_filled
+          .icon-box-content
+            %h4 Polls & Stuff
+          / end .icon-box-content
+        / end .icon-box-1
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        %br/
+        %br/
+        .fixed
+          .progress-bar-description
+            Creativity
+            %span 75%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "75", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Sustenability
+            %span 85%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "85", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Developement
+            %span 65%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "65", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Clients
+            %span 95%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "95", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+      / end .span6
+      .span6
+        #testimonial-slider
+          %ul.slides
+            %li
+              .testimonial
+                / %img{:alt => "", :src => "_content/testimonial/167x167-1.png"}/
+                %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-1.png")}"}
+                %blockquote
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                %h5.text-right
+                  %strong> Jane Doe
+                  ,
+                  Client
+              / end .testimonial
+            %li
+              .testimonial
+                / %img{:alt => "", :src => "_content/testimonial/167x167-2.png"}/
+                %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-2.png")}"}
+                %blockquote
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                %h5.text-right
+                  %strong> Jane Doe
+                  ,
+                  Client
+              / end .testimonial
+            %li
+              .testimonial
+                / %img{:alt => "", :src => "_content/testimonial/167x167-3.png"}/
+                %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-3.png")}"}
+                %blockquote
+                  %p
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                %h5.text-right
+                  %strong> Jane Doe
+                  ,
+                  Client
+              / end .testimonial
+        / end #testimonial-slider
+      / end .span6
+    / end .row
+    .row
+      .span12
+        %h3.headline-2
+          %span My Portfolio
+      / end .span12
+    / end .row
+    = render "/sapphire/zoom"
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+/ end #wrap

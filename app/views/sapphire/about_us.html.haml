@@ -1,0 +1,282 @@
+#wrap
+  #content
+    / /// CONTENT  ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+    #page-header
+      .row
+        .span12
+          %h2 About us
+        / end .span12
+      / end .row
+    / end #page-header
+    .row
+      .span12
+        %h3.headline
+          %span Who we are
+      / end .span12
+    / end .row
+    .row
+      .span4
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        %p
+          Sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+          illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      / end .span4
+      .span4
+        %ul.circle
+          %li Pellentesque dapibus ante
+          %li Etiam in nisl pulvinar suscipit
+          %li Nunc et leo id enim vestibulum
+          %li In vel nisi nec ipsum pharetra
+      / end .span4
+      .span4
+        / %img.responsive-img{:alt => "", :src => "_content/about-us/300x270.png"}/
+        %img.responsive-img{:alt => "", src: "#{image_path("_content/about-us/300x270.png")}"}
+      / end .span4
+    / end .row
+    %br/
+    %br/
+    / .parallax{:style => "background-image:url(_content/backgrounds/bg-parallax-2.png);"}
+    .parallax{:style => "background-image: url(#{image_path "_content/backgrounds/bg-parallax-2.png"})"}
+      %br/
+      %br/
+      .row
+        .span12
+          .process-builder
+            %ul.fixed
+              %li.color-shade-2
+                %span
+                  %i.ifc-recycle_sign_filled
+                .process-description
+                  %h3
+                    1. Creative
+                    %strong Design
+                / end .process-description
+              %li.color-shade-3
+                %span
+                  %i.ifc-download2_filled
+                .process-description
+                  %h3
+                    2. Unique
+                    %strong Style
+                / end .process-description
+              %li.color-shade-1
+                %span
+                  %i.ifc-lock_filled
+                .process-description
+                  %h3
+                    3. Retina
+                    %strong Ready
+                / end .process-description
+              %li.color-shade-5
+                %span
+                  %i.ifc-megaphone_filled
+                .process-description
+                  %h3
+                    4. Very
+                    %strong Responsive
+                / end .process-description
+          / end .process-builder
+        / end .span12
+      / end .row
+      %br/
+    / end .parallax
+    .row
+      .span12
+        %h3.headline
+          %span Meet the Team
+      / end .span12
+    / end .row
+    .row
+      .span4
+        .team-member
+          / %img{:alt => "", :src => "_content/team/255x300-1.png"}/
+          %img{:alt => "", src: "#{image_path("_content/team/255x300-1.png")}"}
+          %br.clear/
+          %h3 Cate Smith
+          %p Designer
+          %p
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam.
+          .social-media
+            %a.facebook-icon.social-icon{:href => "#"}
+              %i.fa.fa-facebook
+            %a.twitter-icon.social-icon{:href => "#"}
+              %i.fa.fa-twitter
+            %a.googleplus-icon.social-icon{:href => "#"}
+              %i.fa.fa-google-plus
+            %a.pinterest-icon.social-icon{:href => "#"}
+              %i.fa.fa-pinterest
+          / end .social-media
+        / end .team-member
+      / end .span4
+      .span4
+        .team-member
+          / %img{:alt => "", :src => "_content/team/255x300-2.png"}/
+          %img{:alt => "", src: "#{image_path("_content/team/255x300-2.png")}"}
+          %br.clear/
+          %h3 John Doe
+          %p Project Mangaer
+          %p
+            Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit,
+            sed quia consequuntur magni dolores eos, qui ratione.
+          .social-media
+            %a.facebook-icon.social-icon{:href => "#"}
+              %i.fa.fa-facebook
+            %a.twitter-icon.social-icon{:href => "#"}
+              %i.fa.fa-twitter
+            %a.googleplus-icon.social-icon{:href => "#"}
+              %i.fa.fa-google-plus
+            %a.pinterest-icon.social-icon{:href => "#"}
+              %i.fa.fa-pinterest
+          / end .social-media
+        / end .team-member
+      / end .span4
+      .span4
+        .team-member
+          / %img{:alt => "", :src => "_content/team/255x300-3.png"}/
+          %img{:alt => "", src: "#{image_path("_content/team/255x300-3.png")}"}
+          %br.clear/
+          %h3 Maria Carter
+          %p Designer
+          %p
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam.
+          .social-media
+            %a.facebook-icon.social-icon{:href => "#"}
+              %i.fa.fa-facebook
+            %a.twitter-icon.social-icon{:href => "#"}
+              %i.fa.fa-twitter
+            %a.googleplus-icon.social-icon{:href => "#"}
+              %i.fa.fa-google-plus
+            %a.pinterest-icon.social-icon{:href => "#"}
+              %i.fa.fa-pinterest
+          / end .social-media
+        / end .team-member
+      / end .span4
+    / end .row
+    %br/
+    %br/
+    %br/
+    .row
+      .span6
+        .icon-box-1
+          %i.ifc-umbrella_filled
+          .icon-box-content
+            %h4 Lorem ipsum dolor
+          / end .icon-box-content
+        / end .icon-box-1
+        %br/
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        %p
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proiden.
+      / end .span6
+      .span6
+        .icon-box-1
+          %i.ifc-toolbox_filled
+          .icon-box-content
+            %h4 Polls & Stuff
+          / end .icon-box-content
+        / end .icon-box-1
+        .fixed
+          .progress-bar-description
+            Creativity
+            %span 75%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "75", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Sustenability
+            %span 85%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "85", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Developement
+            %span 65%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "65", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+        .fixed
+          .progress-bar-description
+            Clients
+            %span 95%
+          .progress-bar
+            %span.progress-bar-outer{"data-width" => "95", :style => "background-color:#0aab8a;"}
+              %span.progress-bar-inner
+          / end .progress-bar
+      / end .span6
+    / end .row
+    %br/
+    %br/
+    %br/
+    .box-3{:style => "margin-bottom:-50px;"}
+      .row
+        .span12
+          #testimonial-slider
+            %ul.slides
+              
+              %li
+                .testimonial-2
+                  / %img{:alt => "", :src => "_content/testimonial/167x167-1.png"}/
+                  %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-1.png")}"}
+                  %blockquote
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                  %h5.text-right
+                    %strong> Jane Doe
+                    ,
+                    Client
+                / end .testimonial-2
+              
+              %li
+                .testimonial-2
+                  / %img{:alt => "", :src => "_content/testimonial/167x167-2.png"}/
+                  %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-2.png")}"}
+                  %blockquote
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                  %h5.text-right
+                    %strong> Jane Doe
+                    ,
+                    Client
+                / end .testimonial-2
+              
+              %li
+                .testimonial-2
+                  / %img{:alt => "", :src => "_content/testimonial/167x167-3.png"}/
+                  %img{:alt => "", src: "#{image_path("_content/testimonial/167x167-3.png")}"}
+                  %blockquote
+                    %p
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                  %h5.text-right
+                    %strong> Jane Doe
+                    ,
+                    Client
+                / end .testimonial-2
+          / end #testimonial-slider
+        / end .span12
+      / end .row
+    / end .box-3
+    / ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  / end #content
+/ end #wrap     
